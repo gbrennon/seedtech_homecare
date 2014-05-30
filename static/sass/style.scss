@@ -1,0 +1,161 @@
+//////////////////////////////
+// CORE VARIABLES FOR BRENNON
+//////////////////////////////
+
+$white: 			#fff;
+$black: 			#000;
+
+$gray: 				#949292;
+$darkgray: 			#8d8b8b;
+$lightgray: 		#cbc9c9;
+
+$green: 			#05d8ad;
+$yellow: 			#fdad0c;
+$red:				#d72137;
+
+@mixin label {
+	font-size: 14px;
+	color: $darkgray;
+}
+
+@mixin span {
+	font-size: 12px;
+	color: $darkgray;
+	position: relative;
+	top: -20px;
+	left: -12px;
+}
+
+body {
+	font-family: 'Fjalla One', sans-serif;
+	background: #cccccc; /* Old browsers */
+	background: -moz-linear-gradient(top,  #cccccc 0%, #ffffff 50%, #cccccc 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cccccc), color-stop(50%,#ffffff), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #cccccc 0%,#ffffff 50%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #cccccc 0%,#ffffff 50%,#cccccc 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #cccccc 0%,#ffffff 50%,#cccccc 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #cccccc 0%,#ffffff 50%,#cccccc 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+
+section.main {
+	margin-top: 20px;
+}
+
+h3 { 
+	color: $darkgray;
+	font-family: 'Fjalla One', sans-serif;
+	margin-top: 30px;
+}
+
+p {
+	font-family: 'Armata', sans-serif;
+}
+
+label {
+	@include label;
+}
+
+span {
+	@include span;
+	font-family: 'Armata', sans-serif;
+
+	&.ui-datepicker-month, &.ui-datepicker-year {
+		top: 0px !important;
+	}
+}
+
+p, label, span {
+	color: $darkgray;
+}
+
+th, td {
+	font-family: 'Armata', sans-serif;
+	color: $darkgray;
+
+	span {
+		top: 0px !important;
+		padding-left: 10px;
+	}
+}
+
+form *:not(p) {
+	font-family: 'Armata', sans-serif;
+}
+
+.panel {
+	height: 100px;
+	border: none;
+
+	p {
+		padding-bottom: 15px; 
+		text-align: center;
+		color: $gray;
+	}
+}
+
+.auto {
+	height: auto;
+
+	p {
+		padding-bottom: 0px;
+	}
+}
+
+.coletado {
+	background-color: $green;
+}
+
+.aguardo {
+	background-color: $yellow;
+}
+
+.atrasado {
+	background-color: $red;
+}
+
+.coletado, .aguardo, .atrasado {
+
+	p, span {
+		color: $white;
+	}
+}
+
+.bordered {
+	border: 1px solid $gray;
+}
+
+.ui-datepicker-div {
+	margin-top: -15px;
+}
+
+.ui-datepicker th {
+	margin-left: 0px !important;
+	margin-right: 0px !important;
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+
+#goForm {
+	float: right;
+	background: $lightgray;
+	color: $gray;
+	border: none;
+	padding: 10px;
+	-webkit-transition: 0.5s;
+	   -moz-transition: 0.5s;
+	    -ms-transition: 0.5s;
+	     -o-transition: 0.5s;
+	     	transition: 0.5s;
+
+	&:hover {
+		background: $gray;
+		color: $lightgray;
+	}
+}
+
+
+

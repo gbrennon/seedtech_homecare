@@ -1,0 +1,42 @@
+body { font-family: 'Fjalla One', sans-serif; background: #cccccc; /* Old browsers */ background: -moz-linear-gradient(top, #cccccc 0%, white 50%, #cccccc 100%); /* FF3.6+ */ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #cccccc), color-stop(50%, white), color-stop(100%, #cccccc)); /* Chrome,Safari4+ */ background: -webkit-linear-gradient(top, #cccccc 0%, white 50%, #cccccc 100%); /* Chrome10+,Safari5.1+ */ background: -o-linear-gradient(top, #cccccc 0%, white 50%, #cccccc 100%); /* Opera 11.10+ */ background: -ms-linear-gradient(top, #cccccc 0%, white 50%, #cccccc 100%); /* IE10+ */ background: linear-gradient(to bottom, #cccccc 0%, #ffffff 50%, #cccccc 100%); /* W3C */ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cccccc', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */ background-repeat: no-repeat; background-size: 100% 100%; background-attachment: fixed; }
+
+section.main { margin-top: 20px; }
+
+h3 { color: #8d8b8b; font-family: 'Fjalla One', sans-serif; margin-top: 30px; }
+
+p { font-family: 'Armata', sans-serif; }
+
+label { font-size: 14px; color: #8d8b8b; }
+
+span { font-size: 12px; color: #8d8b8b; position: relative; top: -20px; left: -12px; font-family: 'Armata', sans-serif; }
+span.ui-datepicker-month, span.ui-datepicker-year { top: 0px !important; }
+
+p, label, span { color: #8d8b8b; }
+
+th, td { font-family: 'Armata', sans-serif; color: #8d8b8b; }
+th span, td span { top: 0px !important; padding-left: 10px; }
+
+form *:not(p) { font-family: 'Armata', sans-serif; }
+
+.panel { height: 100px; border: none; }
+.panel p { padding-bottom: 15px; text-align: center; color: #949292; }
+
+.auto { height: auto; }
+.auto p { padding-bottom: 0px; }
+
+.coletado { background-color: #05d8ad; }
+
+.aguardo { background-color: #fdad0c; }
+
+.atrasado { background-color: #d72137; }
+
+.coletado p, .coletado span, .aguardo p, .aguardo span, .atrasado p, .atrasado span { color: white; }
+
+.bordered { border: 1px solid #949292; }
+
+.ui-datepicker-div { margin-top: -15px; }
+
+.ui-datepicker th { margin-left: 0px !important; margin-right: 0px !important; padding-left: 0px !important; padding-right: 0px !important; }
+
+#goForm { float: right; background: #cbc9c9; color: #949292; border: none; padding: 10px; -webkit-transition: 0.5s; -moz-transition: 0.5s; -ms-transition: 0.5s; -o-transition: 0.5s; transition: 0.5s; }
+#goForm:hover { background: #949292; color: #cbc9c9; }
